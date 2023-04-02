@@ -1,0 +1,21 @@
+.footer{
+    display:flex;
+    flex-direction: column;
+    background-color:var(--color-secondary);
+    color:var(--color-text-light);
+    align-items: center;
+
+
+}
+ul{
+    list-style: none;
+    display:flex;
+   flex-direction: row;
+}
+
+li:not(:first-child)::before {
+    content: "|";
+    margin: 10px;
+}
+
+

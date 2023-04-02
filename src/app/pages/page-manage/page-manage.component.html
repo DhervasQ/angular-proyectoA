@@ -1,0 +1,63 @@
+<div class="manage">
+  <div class="manage__inner">
+    <div class="manage__form">
+      <h3>Creación/edición de productos</h3>
+      <div>
+        <p>Nombre</p>
+        <input
+          type="text"
+          [(ngModel)]="product.name"
+          placeholder="Nombre"
+          name="name"
+        />
+      </div>
+      <div>
+        <p>Precio</p>
+        <input
+          type="text"
+          [(ngModel)]="product.price"
+          placeholder="Precio"
+          name="price"
+        />
+      </div>
+      <div>
+        <p>Description</p>
+        <input
+          type="text"
+          [(ngModel)]="product.description"
+          placeholder="Descripcion"
+          name="description"
+        />
+      </div>
+      <div>
+        <p>Image</p>
+        <input
+          type="text"
+          [(ngModel)]="product.image"
+          placeholder="Imagen"
+          name="image"
+        />
+      </div>
+      <div>
+        <p>Stars</p>
+        <input
+          type="text"
+          [(ngModel)]="product.stars"
+          placeholder="Stars"
+          name="stars"
+        />
+      </div>
+      <button type="button" (click)="onButtonClick()">Guardar</button>
+    </div>
+    <div class="manage__preview">
+      <p>Previsualización del producto:</p>
+      <app-product
+        [name]="product.name"
+        [image]="product.image"
+        [description]="product.description"
+        [stars]="product.stars"
+        [price]="product.price"
+      ></app-product>
+    </div>
+  </div>
+</div>

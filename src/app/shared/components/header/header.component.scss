@@ -1,0 +1,19 @@
+.header__section {
+    display: flex;
+    justify-content: center;
+    background-color:var(--color-background-light)
+
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    background-color:var(--color-primary);
+    color:var(--color-nav);
+    
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,15 @@
+img{
+    width:150px;
+    
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.product__price{
+    font-size:20px;
+    text-decoration: solid;
+}

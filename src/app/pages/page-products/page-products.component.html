@@ -1,0 +1,22 @@
+<div class="products">
+  <div class="products__inner">
+    <input
+      type="text"
+      placeholder="Filtro"
+      name="filtro"
+      (keyup)="onKey($event)"
+    />
+
+    <div id="cards">
+      <ng-container *ngFor="let item of datos"
+        ><app-product
+          [name]="item.name"
+          [image]="item.image"
+          [description]="item.description"
+          [stars]="item.stars"
+          [price]="item.price"
+        ></app-product
+      ></ng-container>
+    </div>
+  </div>
+</div>
