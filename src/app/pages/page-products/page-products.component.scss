@@ -1,7 +1,14 @@
-.products{
-   background-color: var(--color-background);
+.products {
+    
+  background-color: var(--color-background);
 }
-.products__inner{
-    margin:10%;
-    background-color: var(--color-background-light);
+.cards{
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+}
+.products__inner {
+  
+  margin: 10%;
+  background-color: var(--color-background-light);
 }
