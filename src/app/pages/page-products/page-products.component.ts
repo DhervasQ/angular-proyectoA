@@ -18,8 +18,8 @@ export class PageProductsComponent implements OnInit{
 
   values = '';
   onKey(event: any) { // without type info
-    this.values = event.target.value
-    let elementos = document.querySelectorAll("#name");
+    this.values = event.target.value;
+    let elementos = document.querySelectorAll("product__name");
     var arrayElementos = Array.prototype.slice.call(elementos);
     var filtrados=arrayElementos.filter(elemento=>{
      return elemento.innerText.includes(this.values);
@@ -28,7 +28,12 @@ export class PageProductsComponent implements OnInit{
     let cards = document.querySelectorAll("#cards");
     var arrayCards = Array.prototype.slice.call(cards);
     arrayCards.forEach(card=>
-      {card.appendChild(filtrados);}
-  )};
+        {card.innerHTML=''})
+
+    // let cards = document.querySelectorAll("#cards");
+    // var arrayCards = Array.prototype.slice.call(cards);
+    // arrayCards.forEach(card=>
+    //   {card.appendChild(filtrados);})
+  };
 
 }

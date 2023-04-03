@@ -38,7 +38,7 @@
           name="image"
         />
       </div>
-      <div>
+      <div class="imput">
         <p>Stars</p>
         <input
           type="text"
@@ -47,10 +47,13 @@
           name="stars"
         />
       </div>
-      <button type="button" (click)="onButtonClick()">Guardar</button>
+      <div class="button">
+        <button type="button" (click)="onButtonClick()">Guardar</button>
+      </div>
     </div>
+    <div class="manage__line"></div>
     <div class="manage__preview">
-      <p>Previsualización del producto:</p>
+      <p class="manage_preview-title">Previsualización del producto:</p>
       <app-product
         [name]="product.name"
         [image]="product.image"

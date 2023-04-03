@@ -12,6 +12,7 @@ import { PageManageComponent } from './pages/page-manage/page-manage.component';
 import { ProductComponent } from './shared/components/product/product.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

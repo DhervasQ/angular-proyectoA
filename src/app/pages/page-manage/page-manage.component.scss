@@ -1,9 +1,42 @@
-.manage{
-    background-color: var(--color-background);
- }
- .manage__inner{
-     margin:10%;
-     background-color: var(--color-background-light);
-     display: flex;
-     align-items: center;
- }
+.manage {
+  background-color: var(--color-background);
+}
+.manage__form {
+  margin-left: 2%;
+}
+.imput {
+  margin-bottom: 10%;
+}
+.manage__inner {
+  margin: 10%;
+  background-color: var(--color-background-light);
+  display: flex;
+  align-items: center;
+}
+button {
+  margin-left: 80%;
+  text-decoration: none;
+  color: var(--color-text-light);
+  padding: 6px 20px;
+  background-color:var(--color-button);
+  display: inline-block;
+  border:0;
+  border-radius: 4px;
+}
+.manage__preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.manage__line {
+  border-left: 4px solid #ffc971;
+  height: 480px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.manage__preview{
+  display:flex;
+}
